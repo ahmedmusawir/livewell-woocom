@@ -60,7 +60,6 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					$product_cart_id = WC()->cart->generate_cart_id( $subscription_product_id );
 		   			$in_cart = WC()->cart->find_product_in_cart( $product_cart_id );
 
-
 				   	if ( ! $in_cart ) {
 
 					    WC()->cart->add_to_cart( $subscription_product_id, 1 );
@@ -99,6 +98,16 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 					   	} 					    
 
 					}
+
+			   		// CHECKING FOR SUBSCRIPTION PRODUCT
+					$product_cart_id = WC()->cart->generate_cart_id( $subscription_product_id );
+		   			$in_cart = WC()->cart->find_product_in_cart( $product_cart_id );
+
+		   			if ( $in_cart ) {
+
+						$yes = 'checked';
+
+				   	} 						
 
 
 					?>  
