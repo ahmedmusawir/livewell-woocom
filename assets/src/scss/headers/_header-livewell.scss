@@ -1,0 +1,90 @@
+/**
+ *
+ * Header 001 Styles
+ *
+ */
+
+#header-livewell {
+
+	@media (min-width: 1200px) {
+		.navbar-expand-xl .navbar-nav .nav-link {
+		    padding-right: 0;
+		    padding-left: 0;
+		}
+	}	
+
+	.navbar {
+		background: $cg-secondary;
+		height: 90px;
+		box-shadow: 2px 2px 5px lighten(gray, 20%);
+
+		.navbar-brand {
+			.logo {
+				width: 80%;
+				// margin-bottom: -.5rem;
+
+				@media (max-width: 460px) {
+					width: 80%;
+				}
+			}
+		}
+		.navbar-toggler {
+			border: 3px solid lighten($cg-primary, 20%);
+
+			.navbar-toggler-icon {
+				background-image: url('/wp-content/uploads/2018/02/new-nav-icon-40.png');
+			}
+		}
+		#navbar-content {
+			#primary-menu {
+				// padding-left: 2rem;
+				// margin-bottom: -2rem;
+
+				.buy-now {
+					padding-left: 2rem;
+					padding-right: 2rem;
+					border-radius: 5px;
+					background-color: $cg-button;
+					box-shadow: 2px 2px 4px gray;
+					padding-top: .17rem;
+
+					a {
+						color: white !important;
+						font-size: .7rem !important;
+						font-weight: bold !important;
+						text-transform: uppercase;
+					}
+				}
+
+				.menu-item {
+					// padding-right: 2rem;
+					margin-right: 3rem;
+
+					a {
+						font-family: $primary-font;
+						font-size: .8rem;
+						font-weight: 400;
+						// text-transform: uppercase;
+						color: lighten($cg-primary, 20%);
+						&:hover {
+							color: lighten($cg-primary, 50%);
+						}
+					}
+				}
+				.current-menu-item {
+					a {
+						font-family: $secondary-font;
+						// color: $cg-button;
+						// border-top: 4px solid $cg-secondary;
+						// border-bottom: 4px solid $cg-secondary;
+					}
+				}
+				
+			}
+		}
+
+	}
+}
+
+
+

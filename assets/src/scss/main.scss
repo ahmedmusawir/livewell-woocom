@@ -1,0 +1,541 @@
+/*=============================
+=            GLOBALS            =
+=============================*/
+@import "wp_default";
+@import "global";
+@import "custom";
+@import "contents/single-global";
+@import "contents/404-page/404-page";
+@import "contents/sidebar/sidebar-global";
+@import "footers/footer-general";
+
+/*=======================================
+=    HEADER & FOOTER & SIDEBAR            =
+=======================================*/
+
+@import "headers/header-livewell";
+// @import "headers/header-cyber";
+@import "footers/footer-livewell";
+// @import "footers/footer-cyberize";
+@import "footers/footer-general";
+// @import "contents/sidebar/sidebar-global";
+
+
+/*=====  End of HEADER & FOOTER  ======*/
+
+/*========================================
+=            PAGE GENERAL            =
+========================================*/
+
+@import "contents/page/page-bizmobile";
+// @import "contents/page/page-mas";
+// @import "contents/page/page-cyberize";
+
+/*=====  End of PAGE GENERAL  ======*/
+
+/*=======================================
+=            BLOG INDEX PAGE            =
+=======================================*/
+
+// @import "contents/blog-index-page/blog-index-bizmobile";
+@import "contents/blog-index-page/blog-index-cyberize";
+
+/*=====  End of BLOG INDEX PAGE  ======*/
+
+/*========================================
+=            SINGLE BLOG POST            =
+========================================*/
+
+// @import "contents/single-post/post-bizmobile";
+// @import "contents/single-post/post-mas";
+@import "contents/single-post/post-cyberize";
+
+/*=====  End of SINGLE BLOG POST  ======*/
+
+/*========================================
+=            COMMENTS			          =
+========================================*/
+
+@import "contents/comments/comments-cyberize";
+// @import "contents/comments/comments-bizmobile";
+
+/*=====  End of SINGLE BLOG POST  ======*/
+
+/*=========================================
+=            SEARCH INDEX PAGE            =
+=========================================*/
+
+// @import "contents/search-index-page/search-index-bizmobile";
+@import "contents/search-index-page/search-index-cyberize";
+
+/*=====  End of SEARCH INDEX PAGE  ======*/
+
+/*==========================================
+=            ARCHIVE INDEX PAGE            =
+==========================================*/
+
+// @import "contents/archive-index-page/archive-index-bizmobile";
+@import "contents/archive-index-page/archive-index-cyberize";
+
+/*=====  End of ARCHIVE INDEX PAGE  ======*/
+
+/*=======================================
+=            PORTFOLIO INDEX PAGE            =
+=======================================*/
+
+@import "contents/portfolio/cg-portfolio-main-page";
+@import "contents/portfolio/cg-taxonomy-portfolio-item";
+@import "contents/portfolio/portfolio-masonry";
+
+/*=====  End of PORTFOLIO INDEX PAGE  ======*/
+
+/*=======================================
+=            WOOCOMMERCE STYLES            =
+=======================================*/
+
+@import "woocom/woocom-global";
+@import "woocom/woocom-livewell";
+
+/*=====  End of WOOCOMMERCE STYLES  ======*/
+
+/**
+ *
+ * LIVE WELL GROUP HOME PAGE
+ *
+ */
+
+// Top Block
+
+
+// FOR DESKTOP ON UP. NOT VISIBLE BELOW 900px
+#home-top-desktop {
+	// border: 1rem solid red;
+
+	@media (max-width: 900px) {
+		display: none;
+	}
+
+	#home-top-left-col {
+		#money-back-30-text {
+			// border: 1rem solid red;
+			p {
+				padding-top: 2.5rem;
+				padding-left: 40%;
+				padding-bottom: 0;
+				margin-bottom: 0;
+
+				@media (max-width: 1700px) {
+					padding-top: 2rem;
+				}
+				@media (max-width: 1500px) {
+					padding-top: 1.5rem;
+				}
+				@media (max-width: 1340px) {
+					padding-top: 1rem;
+				}
+				@media (max-width: 1200px) {
+					padding-top: .8rem;
+					font-size: .8rem !important;
+				}
+				@media (max-width: 1100px) {
+					padding-top: 0rem;
+					line-height: 1rem !important;
+					font-size: .8rem !important;
+				}
+			}
+		}
+	}
+
+	#home-top-right-col {
+		// border: 1rem solid dodgerblue;
+		padding: 6rem !important;
+
+		h3 {
+			font-size: 3rem;
+		}
+
+		@media (max-width: 1400px) {
+			padding: 2rem !important;
+		}
+
+	}		
+}
+
+// FOR IPAD ON DOWN. NOT VISIBLE ABOVE 901px
+
+#home-top-ipad {
+	// border: 1rem solid blue;
+	@media (min-width: 901px) {
+		display: none;
+	}
+
+	#money-back-30-text {
+		// border: 1rem solid red;
+		p {
+			padding-top: 2.5rem !important;
+			padding-left: 35%;
+			padding-bottom: 0;
+			margin-bottom: 0;
+			font-size: 1.5rem !important;
+
+			@media (max-width: 770px) {
+				font-size: 1rem !important;
+				padding-top: 1.3rem !important;
+			}
+			@media (max-width: 550px) {
+				font-size: .8rem !important;
+				padding-top: 0rem !important;
+				line-height: 1rem !important;
+			}
+			@media (max-width: 450px) {
+				font-size: .6rem !important;
+				padding-top: 0rem !important;
+				margin-top: -1.3rem;
+				line-height: 2rem !important;
+			}
+			@media (max-width: 390px) {
+				font-size: .6rem !important;
+				padding-top: 0rem !important;
+				margin-top: -2rem;
+				line-height: 3rem !important;
+			}
+			@media (max-width: 365px) {
+				font-size: .6rem !important;
+				padding-top: 0rem !important;
+				margin-top: -2.3rem;
+				line-height: 3rem !important;
+			}
+		}
+	}
+
+	#home-top-right-col {
+		// border: 1rem solid dodgerblue;
+		margin-top: 3rem !important;
+		padding: 6rem !important;
+
+		h3 {
+			font-size: 3rem;
+		}
+
+		@media (max-width: 1400px) {
+			padding: 2rem !important;
+		}
+
+	}		
+}
+
+// HOME TOP 2ND BLOCK
+
+#home-top-block2 {
+	#left-text-block {
+		// border: 1rem solid blue;
+		p {
+			font-size: 1rem !important;
+			
+			@media (min-width: 1300px) {
+				font-size: 1.5rem !important;
+				line-height: 2rem;
+				color: gray;
+			}
+			// @media (min-width: 1800px) {
+			// 	font-size: 1.8rem !important;
+			// 	line-height: 2rem;
+			// 	color: gray;
+			// }
+		}
+	}
+}
+
+// 3 COL PRODUCT BLOCK - T SHIRT IN THE MIDDLE
+#product-3col-block {
+	.text-box {
+		// border: 1px solid red;
+		padding: 2rem;
+	}
+}
+
+// LAST BLOCK ORANGE BUTTON ON THE right: 
+#last-block-btn {
+	// border: 1px solid red;
+
+	@media (max-width: 400px) {
+		.tcb-button-link {
+			padding: .5rem 2rem !important;
+		}
+		.tcb-button-text.thrv-inline-text {
+
+		}
+	}
+}
+
+/**
+ *
+ * Global Leadbox
+ *
+ */
+.leadbox {
+	background: $cg-primary;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	margin-top: 3rem;
+}
+
+/**
+ *
+ * Private Training breadcrum-holder
+ *
+ */
+.breadcrumb-holder {
+	.breadcrumb {
+		a {
+			// border: 1px solid red;
+			// font-size: 1.2rem;
+			padding-right: .5rem;
+		}
+	}
+}
+
+/**
+ *
+ * Home Page - FAQ Box at the very bottom
+ *
+ */
+
+#faq-box {
+	// border: 1rem solid blue;
+	.tve_faq {
+		background: white;
+
+		.tve_editable {
+			color: $cg-button !important;
+			margin-left: 1rem !important;
+			margin-top: .5rem !important;
+		}
+	}
+	.tve_faq:hover .tve_toggle {
+    	background: url(images/toggle_closed.png) no-repeat center center; 
+    	border: 3px solid $cg-button;
+	}
+	.tve_faq .tve_toggle {
+		width: 15px;
+		height: 15px;
+	    background: url('/wp-content/uploads/2019/04/question-mark-icon.png') no-repeat center center;
+	}
+}
+
+
+/**
+ *
+ * Home Page - 3 COL INFO CTA WITH SHADOW - WHAT WE DO Block
+ *
+ */
+
+#HOME-3COL-INFO-CTA {
+	.single-col-info {
+		// border: 1px solid red;
+		@media (min-width: 857px) and (max-width: 1118px) {
+			min-height: 510px !important;
+			
+		}
+
+	}
+}
+
+
+/**
+ *
+ * Home Page - 3 COL INFO FLAT - WHAT WE DO Block
+ *
+ */
+
+#HOME-3COL-INFO-FLAT {
+	.single-col-info {
+		@media (min-width: 778px) and (max-width: 1216px) {
+			min-height: 570px !important;
+			.bottom-icon-right {
+				display: none;
+				// bottom: -125px;
+			}
+			.bottom-icon-center {
+				display: none;
+				// bottom: -155px;
+			}
+			.bottom-icon-left {
+				display: none;
+				// bottom: -195px;
+			}
+		}
+	}
+}
+
+
+
+/**
+ *
+ * Home Page - Footer Contact Page
+ *
+ */
+#text-2 {
+	// border: 1px solid white;
+	// padding-bottom: 0 !important;
+	.widget-title {
+		margin-bottom: -2.5rem;
+
+		@media (max-width: 640px) {
+			margin-bottom: -1rem;
+		}
+	}
+
+} 
+#gform_wrapper_1 {
+	
+	textarea {
+		height: 4rem;
+		margin-bottom: -1.5rem !important;
+	}
+	#gform_submit_button_1 {
+		color: white;
+		border: 1px solid $cg-button;
+		background-color: $cg-button;
+		padding: .2rem 4rem;
+	}
+}
+
+
+/**
+ *
+ * Order Form - Testimonial guy
+ *
+ */
+#order-form-testimonial-img {
+	img {
+		padding: .3rem;
+		border: 5px solid $cg-primary;
+		border-radius: 50%;
+	}
+}
+
+#gravity-form-container {
+	// border: 2px solid yellow;
+}
+
+/**
+ *
+ * Global Gravity From Styles
+ *
+ */
+
+#contact-page-form-box {
+	// border: 1rem solid blue;
+	label {
+		margin-top: 1rem;
+	}
+	textarea {
+		height: 160px !important;
+	}
+
+	
+} 
+
+#gform_submit_button_10 {
+	display: block;
+	clear: both;
+	margin: 0 auto !important;
+	// border: 1rem solid red;
+
+}
+
+.gform_footer {
+	.gform_button {
+		padding: 1rem 4rem;
+		background-color: $cg-button;
+		color: white;
+		border-radius: 0px;
+		outline: none;
+		border: 1px solid $cg-button;
+		font-weight: bold;
+
+		&:hover {
+			background-color: darkslategray;
+		}
+	}	
+}
+.ginput_container {
+	input {
+		border: 0px solid tomato;
+		border-radius: 0px;
+		outline: none;
+		background-color: whitesmoke;
+	}
+	textarea {
+		border: 0px solid tomato;
+		background-color: whitesmoke;
+	}
+	select {
+		border: 1px solid #e3e3e3;
+		outline: none;
+		background: transparent;
+
+		-webkit-appearance: menulist !important;
+	  	-moz-appearance: menulist !important;
+	  	appearance: menulist !important;
+	}
+	
+}
+
+
+.gform_wrapper li.gfield.gfield_creditcard_warning {
+    padding: 16px 16px 14px;
+    border-top: 2px solid #790000;
+    border-bottom: 4px solid #790000;
+    background-color: transparent !important;
+    width: calc(100% - 16px);
+}
+
+
+/**
+ *
+ * Simple Author Box Plugin Styles
+ *
+ */
+.saboxplugin-wrap {
+	border: 0rem solid white !important;
+	border-top: 2px solid $cg-primary !important;
+	margin-top: 5rem !important;
+	margin-bottom: 5rem !important;
+
+	.saboxplugin-gravatar {
+		// padding-top: 3rem !important;
+		img {
+			// border-radius: 50% !important;
+			padding: .3rem;
+			// border: 3px solid $cg-primary;
+			box-shadow: 3px 3px 6px gray;
+		}
+	}
+	.saboxplugin-authorname {
+		text-transform: capitalize !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
